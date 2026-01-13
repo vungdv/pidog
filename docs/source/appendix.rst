@@ -13,13 +13,11 @@
     👉 Sei pronto a esplorare e creare con noi? Clicca su [|link_sf_facebook|] e unisciti oggi stesso!
 
 Appendice
-============
+=================
 
 .. toctree::
+    :maxdepth: 1
 
-    filezilla
-    get_ip
-    install_openssh_powershell
-    login_windows
-
-
+    _shared/appendix/filezilla
+    _shared/appendix/install_openssh_powershell
+    _shared/appendix/remote_desktop
