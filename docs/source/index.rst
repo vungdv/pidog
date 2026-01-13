@@ -91,7 +91,7 @@ Key technical distinctions:
     python/play_with_python
     ai_interaction/ai_interaction
     hardware/cpn_hardware
-    appendix/appendix
+    appendix
     faq
 
 Copyright Notice
