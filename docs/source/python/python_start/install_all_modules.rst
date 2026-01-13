@@ -14,7 +14,7 @@
 
 .. _install_all_modules:
 
-5. Instalar Todos los Módulos (Importante)
+Instalar Todos los Módulos (Importante)
 ==============================================
 
 .. note::
@@ -31,69 +31,60 @@
 
 #. Instalar el módulo ``robot-hat``.
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/
-        git clone -b 2.5.x https://github.com/sunfounder/robot-hat.git --depth 1
-        cd robot-hat
-        sudo python3 install.py
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/
+       git clone -b 2.5.x https://github.com/sunfounder/robot-hat.git --depth 1
+       cd robot-hat
+       sudo python3 install.py
 
 #. Instalar el módulo ``vilib``.
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/
-        git clone https://github.com/sunfounder/vilib.git
-        cd vilib
-        sudo python3 install.py
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/
+       git clone https://github.com/sunfounder/vilib.git
+       cd vilib
+       sudo python3 install.py
 
 #. Instalar el módulo ``pidog``.
 
-    .. raw:: html
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/
+       git clone https://github.com/sunfounder/pidog.git --depth 1
+       cd pidog
+       sudo pip3 install . --break
 
-        <run></run>
-
-    .. code-block:: bash
-
-        cd ~/
-        git clone https://github.com/sunfounder/pidog.git --depth 1
-        cd pidog
-        sudo pip3 install . --break
-
-    Este paso tomará un poco de tiempo, así que ten paciencia.
+   Este paso tomará un poco de tiempo, así que ten paciencia.
 
 #. Ejecutar el script ``i2samp.sh``.
 
-    Finalmente, necesitas ejecutar el script ``i2samp.sh`` para instalar los componentes necesarios para el amplificador i2s; de lo contrario, el robot no tendrá sonido.
+   Finalmente, necesitas ejecutar el script ``i2samp.sh`` para instalar los componentes necesarios para el amplificador i2s; de lo contrario, el robot no tendrá sonido.
+   
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/robot-hat
+       sudo bash i2samp.sh
+   
+   Escriba ``y`` y presione **Enter** tres veces para continuar el script, iniciar ``/dev/zero`` en segundo plano y luego reiniciar el sistema.
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/robot-hat
-        sudo bash i2samp.sh
-
-    .. image:: img/i2s.png
-
-    Escribe ``y`` y presiona ``Enter`` para continuar ejecutando el script.
-
-    .. image:: img/i2s2.png
-
-    Escribe ``y`` y presiona ``Enter`` para ejecutar ``/dev/zero`` en segundo plano.
-
-    .. image:: img/i2s3.png
-
-    Escribe ``y`` y presiona ``Enter`` para reiniciar la máquina.
-
-    .. note::
-        Si no hay sonido después de reiniciar, puede que necesites ejecutar el script ``i2samp.sh`` varias veces.
+   
+   .. note::
+       Si no hay sonido después de reiniciar, puede que necesites ejecutar el script ``i2samp.sh`` varias veces.

@@ -24,12 +24,11 @@ Si ya estás familiarizado con Raspberry Pi y puedes abrir la línea de comandos
 .. toctree::
     :maxdepth: 1
 
-    what_do_we_need
-    installing_the_os
-    power_supply
-    set_up_your_raspberry_pi
+    ../../_shared/pi_start/need_components
+    ../../_shared/pi_start/install_os_trixie
+    ../../_shared/pi_start/power_supply_robot_hat
+    ../../_shared/pi_start/set_up_pi
     install_all_modules
-    enable_i2c_spi
     py_servo_adjust
 
 **Video**

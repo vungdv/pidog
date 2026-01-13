@@ -14,7 +14,7 @@
 
 .. _py_servo_adjust:
 
-7. Ajuste de Servos (Importante)
+Ajuste de Servos (Importante)
 ===========================================
 
 El rango de ángulo del servo es de -90° a 90°, pero el ángulo configurado de fábrica es aleatorio; puede ser 0°, 45° u otro valor. Si lo ensamblamos directamente con dicho ángulo, podría provocar un movimiento desordenado al ejecutar el código en el robot, o peor aún, podría hacer que el servo se bloquee y se queme.
@@ -23,27 +23,24 @@ Por ello, es necesario configurar todos los servos en 0° antes de instalarlos, 
 
 #. Para asegurarte de que el servo está correctamente ajustado a 0°, primero inserta el brazo del servo en el eje del servo y luego gira suavemente el brazo a un ángulo diferente. Este brazo de servo es solo para que puedas verificar claramente la rotación del servo.
 
-    .. image:: img/servo_arm.png
-        :align: center
-
+   .. image:: img/servo_arm.png
+       :align: center
+   
 #. A continuación, ejecuta ``servo_zeroing.py`` en la carpeta ``examples/``.
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/pidog/examples
-        sudo python3 servo_zeroing.py
-
-    .. note::
-        Si recibes un error, intenta volver a habilitar el puerto I2C de la Raspberry Pi, consulta: :ref:`i2c_spi_config`.
-
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/pidog/examples
+       sudo python3 servo_zeroing.py
+   
 #. Luego, conecta el cable del servo al puerto P11 como se muestra a continuación. Al mismo tiempo, verás que el brazo del servo gira a una posición (esta es la posición de 0°, que es una ubicación aleatoria y puede que no sea vertical o paralela).
 
-    .. image:: img/servo_pin11.jpg
-
+   .. image:: img/servo_pin11.jpg
+   
 #. Ahora, retira el brazo del servo, asegurándote de que el cable del servo permanezca conectado y no apagues la alimentación. Luego, continúa el montaje siguiendo las instrucciones en papel.
 
 .. note::
