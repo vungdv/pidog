@@ -1,6 +1,6 @@
 .. _py_servo_adjust:
 
-7. 伺服电机调整（重要）
+伺服电机调整（重要）
 ===========================================
 
 .. warning::
@@ -13,28 +13,25 @@
 
 #. 为确保伺服电机已经正确设置为 0°，首先将伺服臂插入伺服轴中，然后轻轻旋转摇臂到不同角度。这个伺服臂是为了让你清楚地看到伺服电机的旋转情况。
 
-    .. image:: img/servo_arm.png  
-        :align: center
+   .. image:: img/servo_arm.png  
+       :align: center
 
 
 #. 现在，在 ``examples/`` 文件夹中运行 ``servo_zeroing.py``。
 
-    .. raw:: html
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/pidog/examples
+       sudo python3 servo_zeroing.py
 
-        <run></run>
-
-    .. code-block::
-
-        cd ~/pidog/examples
-        sudo python3 servo_zeroing.py
-
-
-    .. note::
-        如果遇到错误，请尝试重新启用 Raspberry Pi 的 I2C 端口，参考： :ref:`i2c_spi_config` 。
 
 #. 接下来，将伺服电机电缆插入 P11 端口，如下图所示，同时您将看到伺服臂旋转到某个位置（这是 0° 位置，可能是一个随机的位置，可能不垂直或平行）。
 
-    .. image:: img/servo_pin11.jpg
+   .. image:: img/servo_pin11.jpg
 
 
 #. 现在，移除伺服臂，确保伺服电机线仍然连接，且不要关闭电源。然后继续按照纸质说明进行组装。

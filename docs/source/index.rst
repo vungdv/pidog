@@ -72,7 +72,7 @@ PiDog 是一款 Raspberry Pi 宠物机器人，采用铝合金结构。它可以
     python/play_with_python
     ai_interaction/ai_interaction
     hardware/cpn_hardware
-    appendix/appendix
+    appendix
     faq
 
 版权声明  
