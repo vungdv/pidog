@@ -86,7 +86,7 @@ Principales différences techniques :
     python/play_with_python
     ai_interaction/ai_interaction
     hardware/cpn_hardware
-    appendix/appendix
+    appendix
     faq
 
 Mention de droits d'auteur
