@@ -88,7 +88,7 @@ The product is available in two versions: Standard and V2.
     python/play_with_python
     ai_interaction/ai_interaction
     hardware/cpn_hardware
-    appendix/appendix
+    appendix
     faq
 
 著作権に関するお知らせ

@@ -14,89 +14,77 @@
 
 .. _install_all_modules:
 
-5. すべてのモジュールをインストールする（重要）
+すべてのモジュールをインストールする（重要）
 =========================================================
 
 .. note::
 
-    Lite バージョンの OS をインストールしている場合は、Python3 関連のパッケージをインストールする必要があります。
-
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        sudo apt install git python3-pip python3-setuptools python3-smbus
-
+   Lite バージョンの OS をインストールしている場合は、Python3 関連のパッケージをインストールする必要があります。
+   
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       sudo apt install git python3-pip python3-setuptools python3-smbus
+   
 
 #. ``robot-hat`` モジュールをインストールします。
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/
-        git clone -b 2.5.x https://github.com/sunfounder/robot-hat.git --depth 1
-        cd robot-hat
-        sudo python3 install.py
-
-
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/
+       git clone -b 2.5.x https://github.com/sunfounder/robot-hat.git --depth 1
+       cd robot-hat
+       sudo python3 install.py
 
 #. ``vilib`` モジュールをインストールします。
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/
-        git clone https://github.com/sunfounder/vilib.git
-        cd vilib
-        sudo python3 install.py
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/
+       git clone https://github.com/sunfounder/vilib.git
+       cd vilib
+       sudo python3 install.py
 
 #. ``pidog`` モジュールをインストールします。
 
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block:: bash
-
-        cd ~/
-        git clone https://github.com/sunfounder/pidog.git --depth 1
-        cd pidog
-        sudo pip3 install . --break
-
-    このステップには少し時間がかかるため、しばらくお待ちください。
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/
+       git clone https://github.com/sunfounder/pidog.git --depth 1
+       cd pidog
+       sudo pip3 install . --break
+   
+   このステップには少し時間がかかるため、しばらくお待ちください。
 
 #. スクリプト ``i2samp.sh`` を実行します。
 
-    最後に、i2s アンプに必要なコンポーネントをインストールするために ``i2samp.sh`` スクリプトを実行する必要があります。これを行わないとロボットから音が出ません。
-
-    .. raw:: html
-
-        <run></run>
-
-    .. code-block::
-
-        cd ~/robot-hat
-        sudo bash i2samp.sh
+   最後に、i2s アンプに必要なコンポーネントをインストールするために ``i2samp.sh`` スクリプトを実行する必要があります。これを行わないとロボットから音が出ません。
+   
+   .. raw:: html
+   
+       <run></run>
+   
+   .. code-block::
+   
+       cd ~/robot-hat
+       sudo bash i2samp.sh
         
-    .. image:: img/i2s.png
-
-    ``y`` を入力して ``Enter`` を押し、スクリプトの実行を続けます。
-
-    .. image:: img/i2s2.png
-
-    ``y`` を入力して ``Enter`` を押し、バックグラウンドで ``/dev/zero`` を実行します。
-
-    .. image:: img/i2s3.png
-
-    ``y`` を入力して ``Enter`` を押して、マシンを再起動します。
-
-    .. note::
+   ``y`` を 3 回入力して **Enter** キーを押し、スクリプトを続行し、バックグラウンドで ``/dev/zero`` を実行してから、マシンを再起動してください。
+ 
+   .. note::
         再起動後に音が出ない場合は、 ``i2samp.sh`` スクリプトを複数回実行する必要があるかもしれません。
