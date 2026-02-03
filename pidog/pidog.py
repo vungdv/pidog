@@ -313,6 +313,10 @@ class Pidog():
                 self.imu_thread.join()
             if self.sensory_process != None:
                 self.sensory_process.terminate()
+                self.sensory_process.join(timeout=1) # Wait for the process to terminate
+                if self.sensory_process.is_alive():
+                    self.sensory_process.kill() # If it's still alive, force kill
+
 
             info('Quit')
 
