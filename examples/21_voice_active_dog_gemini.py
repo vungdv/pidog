@@ -4,10 +4,16 @@ from secret import GEMINI_API_KEY as API_KEY
 from pidog.dual_touch import TouchStyle
 from voice_active_dog import VoiceActiveDog
 
+print(f"[LOG] API_KEY set: {'YES' if API_KEY and API_KEY != 'your-api-key-here' else 'NO - please set your key in secret.py'}")
+print(f"[LOG] API_KEY preview: {API_KEY[:8]}..." if len(API_KEY) > 8 else f"[LOG] API_KEY: {API_KEY}")
+
 llm = LLM(
     api_key=API_KEY,
     model="gemini-2.0-flash",
+    debug=True,
 )
+print(f"[LOG] LLM URL: {llm.url}")
+print(f"[LOG] LLM model: {llm.model}")
 
 # Robot name
 NAME = "Pidog"
